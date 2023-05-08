@@ -2,7 +2,7 @@
 
 // -----CONTAINER-----
 .container
-	width: 1890px
+	width: 1950px
 	padding: 0 15px
 	margin: 0 auto
 	background: #f6f8fb
@@ -48,20 +48,46 @@
 
 	&__container
 		display: flex
+		gap: 1%
 
 	&__item
+		width: 33%
 		position: relative
-		width: 35%
-		gap: 5%
 
-		h3,p,a
-			display: flex
+		&_info
 			position: absolute
-			top: 50%
+			top: 20%
 			left: 50%
 			transform: translate(-50%, -50%)
 			color: #fff
 			text-align: center
-			gap: 30px
+			width: 100%
+
+			h3
+				font-size: 60px
+				margin-bottom: 30px
+
+			p
+				font-size: 35px
+				margin-bottom: 35px
+				line-height: 1.6
+
+		img
+			width: 100%
+
+	&__btn
+		color: #fff
+		font-size: 25px
+		text-decoration: none
+		transition: all .6s
+
+		&:hover
+			color: #000
+
+			svg, path
+				fill: #000
+
+		span
+			padding-right: 15px
 
 
