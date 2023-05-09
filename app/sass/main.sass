@@ -15,11 +15,19 @@
 	align-items: center
 	position: relative
 
+	+r(1700)
+		padding: 240px 0 35px
+
 	&__title
+		display: flex
+		justify-content: center
 		font-weight: 700
 		font-size: 50px
 		line-height: 62px
 		color: #171717
+
+		+r(1700)
+			font-size: 35px
 
 	&__logo
 		position: absolute
@@ -28,20 +36,34 @@
 		left: 90%
 		transform: translate(-50%,-50%)
 
+		+r(1700)
+			top: 30%
+			left: 50%
+
 		img
 			display: block
 			width: 100%
 
 .about
+	display: flex
+	justify-content: center
 	padding: 35px 0 50px
+
+	img
+		width: 100%
 
 	&__title
 		text-align: center
-		font-size: 27px
+		font-size: 30px
 		margin-bottom: 65px
 		line-height: 49px
 		color: #171717
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+
+		+r(1700)
+			text-shadow: none
+			font-size: 24px
+
 
 .hero
 	padding: 50px 0
@@ -53,6 +75,10 @@
 	&__item
 		width: 33%
 		position: relative
+
+		+r(1700)
+			width: 100%
+			
 
 		&_info
 			position: absolute
@@ -72,8 +98,8 @@
 				margin-bottom: 35px
 				line-height: 1.6
 
-		img
-			width: 100%
+			img
+				width: 100%
 
 	&__btn
 		color: #fff
