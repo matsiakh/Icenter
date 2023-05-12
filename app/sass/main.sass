@@ -2,10 +2,28 @@
 
 // -----CONTAINER-----
 .container
-	width: 1950px
+	max-width: 1950px
 	padding: 0 15px
 	margin: 0 auto
 	background: #f6f8fb
+
+	+r(1950)
+		max-width: 1450px
+
+	+r(1450)
+		max-width: 1200px
+
+	+r(1200)
+		max-width: 992px
+
+	+r(992)
+		max-width: 768px
+
+	+r(767)
+		max-width: 576px
+
+	+r(576)
+		max-width: 480px
 
 .header
 	padding: 120px 0 35px
@@ -17,6 +35,9 @@
 
 	+r(1700)
 		padding: 240px 0 35px
+
+	+r(992)
+		padding-bottom: 15px
 
 	&__title
 		display: flex
@@ -49,6 +70,9 @@
 	justify-content: center
 	padding: 35px 0 50px
 
+	+r(992)
+		padding-top: 15px
+
 	img
 		width: 100%
 
@@ -64,20 +88,28 @@
 			text-shadow: none
 			font-size: 24px
 
+	br
+		+r(992)
+			display: none
 
 .hero
 	padding: 50px 0
 
 	&__container
 		display: flex
-		gap: 1%
+		flex-wrap: wrap
+		justify-content: center
+		gap: 0.5%
+
+		+r(1950)
+			gap: 15px
 
 	&__item
-		width: 33%
+		width: 100%
+		max-width: 630px
 		position: relative
 
 		+r(1700)
-			width: 100%
 
 		&_info
 			position: absolute
@@ -88,14 +120,14 @@
 			text-align: center
 			width: 100%
 
-			h3
-				font-size: 60px
-				margin-bottom: 30px
+		h3
+			font-size: 60px
+			margin-bottom: 30px
 
-			p
-				font-size: 35px
-				margin-bottom: 35px
-				line-height: 1.6
+		p
+			font-size: 35px
+			margin-bottom: 35px
+			line-height: 1.6
 
 	&__images
 		width: 100%
@@ -103,6 +135,9 @@
 	img
 		min-height: 100%
 		width: 100%
+
+	svg, path
+		transition: all .6s
 
 	&__btn
 		color: #fff
