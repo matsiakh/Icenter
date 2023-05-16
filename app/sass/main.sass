@@ -169,8 +169,8 @@
 		color: #111111
 		font-size: 50px
 
-	&__slider
-		display: flex
+	// &__slider
+	// 	display: flex
 
 	&__text
 		padding: 120px 90px
@@ -186,53 +186,3 @@
 
 		span
 			font-size: 25px
-
-	&__images
-
-	&__next,
-	&__prev
-		display: block
-		position: absolute
-		height: 30px
-		width: 30px
-		left: -60px
-		top: 50%
-		transform: translate(0, -50%)
-		transition: all .6s
-		border-radius: 50%
-
-		+r(1200)
-			left: 0
-			background: rgba(0,0,0,.1)
-			box-shadow: 0 3px 3px rgba(0,0,0,.1)
-			z-index: 1
-
-		&:hover
-			background: rgba(0,0,0,.1)
-			box-shadow: 0 3px 3px rgba(0,0,0,.1)
-
-		&:active
-			background: rgba(0,0,0,.2)
-
-		&::after
-			content: ''
-			position: absolute
-			left: 50%
-			top: 50%
-			display: block
-			height: 8px
-			width: 8px
-			border-left: 1px solid #000
-			border-bottom: 1px solid #000
-			transform: translate(-25%, -65%) rotate(45deg)
-			transition: all .6s
-
-	&__next
-		right: -60px
-		left: auto
-
-		+r(1200)
-			right: 0
-
-		&::after
-			transform: translate(-65%, -25%) rotate(-135deg)
