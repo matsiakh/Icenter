@@ -224,6 +224,7 @@
 	&__title
 		text-align: center
 		margin-bottom: 80px
+		font-size: 50px
 
 	&__container
 		display: flex
@@ -235,11 +236,17 @@
 		margin-right: 20px
 		border-radius: 10px
 		padding-top: 80px
+		padding-right: 50px
+
+		&:last-child
+			padding-left: 40px
+			padding-right: 0
+			margin-right: 0
 
 		&::after
 			content: ""
 			display: block
-			background-color: black
+			background-color: #F5F8FF
 			position: absolute
 			top: 0
 			right: 0
@@ -251,6 +258,8 @@
 			&::after
 				left: 0
 				right: auto
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+				border-radius: 10px
 
 	&__item
 		display: flex
@@ -261,3 +270,32 @@
 
 	&__text
 		text-align: center
+		font-weight: 500
+		font-size: 35px
+		line-height: 50px
+
+		h3
+			font-size: 35px
+			font-weight: 500
+
+.slider
+	width: 100%
+
+.tabs
+	display: flex
+
+.tab
+	padding: 10px 20px
+	cursor: pointer
+
+.tab.active
+	background-color: lightgray
+
+.slides
+	margin-top: 20px
+
+.slide
+	display: none
+
+.slide.active
+	display: block
