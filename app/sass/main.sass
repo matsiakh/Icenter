@@ -327,15 +327,29 @@
 	background-size: cover
 	background-position: center
 
+	+r(1200)
+		background-image: url(../images/dist/gift__bgd2.png)
+		background-size: auto
+		background-repeat: no-repeat
+		min-height: 777px
+		padding: 40px 0 25px
+
 	&__container
 		margin: 0 auto
 		width: 1280px
+
+		+r(1200)
+			width: 290px
 
 	&__title
 		font-weight: 700
 		font-size: 50px
 		margin-bottom: 50px
 		color: #fff
+
+		+r(1200)
+			font-size: 35px
+			margin-bottom: 30px
 
 	&__info
 		display: flex
@@ -344,8 +358,11 @@
 		padding-left: 40px
 		margin-bottom: 30px
 
-		&:last-child
-			margin-bottom: 60px
+		+r(1200)
+			margin-bottom: 25px
+
+			+r(1200)
+				margin-bottom: 15px
 
 		svg
 			position: absolute
@@ -356,10 +373,16 @@
 			font-size: 30px
 			color: #fff
 
+			+r(1200)
+				font-size: 20px
+
 		&--two
 			margin-bottom: 65px
 
-	&__memory
+			+r(1200)
+				margin-bottom: 15px
+
+	&__btn
 		display: flex
 		align-items: center
 		font-weight: 500
@@ -368,11 +391,20 @@
 		text-decoration: none
 		transition: all .6s
 
+		+r(1200)
+			font-size: 16px
+
 		&:hover
 			color: #000
 
 			svg, path
 				fill: #000
+				transition: fill 0.6s !important
 
 		span
 			margin-right: 10px
+
+.flash
+	padding: 40px 0 20px
+
+
