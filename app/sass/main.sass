@@ -96,11 +96,11 @@
 
 	&__container
 		display: flex
-		flex-wrap: wrap
 		justify-content: center
 		gap: 0.5%
 
 		+r(1950)
+			flex-wrap: wrap
 			gap: 15px
 
 	&__item
@@ -322,7 +322,7 @@
 			margin-right: 15px
 
 .gift
-	padding: 150px 0 80px
+	padding: 150px 0 50px
 	background-image: url(../images/dist/gift__bgd.png)
 	background-size: cover
 	background-position: center
@@ -405,6 +405,74 @@
 			margin-right: 10px
 
 .flash
-	padding: 40px 0 20px
+	padding: 50px 0 20px
+	background: #F2F6FF
+
+	&__container
+		display: flex
+		justify-content: center
+		max-width: 1180px
+
+	&__title
+		font-weight: 700
+		font-size: 50px
+		text-align: center
+		margin-bottom: 100px
+
+	&__text
+		background: #fff
+		width: 50%
+		padding: 50px 30px 55px 45px
+
+	&__date
+		display: flex
+		align-items: center
+		margin-bottom: 50px
+
+		svg
+			fill: #B7C1D8
+			margin-right: 15px
+
+		span
+			font-size: 25px
+			color: #B7C1D8
+
+	&__subtitle
+		font-weight: 700
+		font-size: 45px
+		margin-bottom: 50px
+
+	&__more
+		font-size: 28px
+		margin-bottom: 10px
+
+		a
+			text-decoration: none
+			color: #c33
+
+			&:hover
+				color: #526796
+
+	&__images
+		width: 50%
+
+		img
+			width: 100%
+
+	&__btn
+		color: #526796
+		text-decoration: none
+		font-weight: 500
+		font-size: 25px
+		transition: all .6s
+
+		&:hover
+			color: #000
+
+			svg, path
+				fill: #000
+
+		span
+			margin-right: 15px
 
 
