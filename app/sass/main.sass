@@ -513,6 +513,7 @@
 
 			svg, path
 				fill: #000
+				transition: fill 0.6s !important
 
 		span
 			margin-right: 15px
@@ -563,6 +564,9 @@
 			font-size: 17px
 			font-weight: 600
 
+			&:hover
+				color: #526796
+
 		svg
 			margin-right: 8px
 
@@ -587,6 +591,10 @@
 			+r(1200)
 				display: none
 
+		a
+			&:hover
+				color: #526796
+
 	&__geo
 		display: flex
 		align-items: center
@@ -597,6 +605,9 @@
 
 		a
 			font-weight: 400
+
+			&:hover
+				color: #526796
 
 		svg
 			margin-right: 10px
@@ -609,4 +620,9 @@
 			display: flex
 			justify-content: center
 			width: 100%
+
+		svg, path
+			&:hover
+				fill: #000
+				transition: fill 0.6s !important
 
